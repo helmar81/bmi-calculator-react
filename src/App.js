@@ -147,8 +147,14 @@ class App extends React.Component {
     return (
       <div className="App">
         <form onSubmit={this.handleSubmit}>
+         
+          <img
+      src="/GIFSouad.gif"
+      alt="Souad"
+    />
           <h2> BMI calculator </h2>
           <div>
+         
             <label>Height(cm)</label>
             <input
               type="number"
@@ -170,9 +176,14 @@ class App extends React.Component {
           <button type="submit">Submit</button>
           <h2> {this.state.bmi} </h2>
           <h2> {this.state.msg} </h2>
+          <p>check your Body mass index</p>
+          <p>Weight loss can dramatically improve overall health, alleviate symptoms and lower risk of developing obesity related diseases such as cardiovascular disease, type 2 diabetes and more.</p>
         </form>
+       
       </div>
     );
   }
+
+  
 }
 export default App;
